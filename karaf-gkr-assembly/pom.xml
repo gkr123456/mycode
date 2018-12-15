@@ -117,7 +117,9 @@
                         <feature>management</feature>
                         <feature>karaf-gkr-feature</feature>
                     </bootFeatures>
-                    <!-- <installedFeatures/> -->
+                    <!--<installedFeatures>-->
+                        <!--<feature>karaf-gkr-feature</feature>-->
+                    <!--</installedFeatures>-->
                 </configuration>
             </plugin>
         </plugins>
