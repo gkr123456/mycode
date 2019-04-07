@@ -19,10 +19,17 @@ package com.gkr;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
+import java.time.LocalDateTime;
+import java.util.logging.Logger;
+
 public class Activator implements BundleActivator {
+    private static final Logger LOGGER = Logger.getLogger(Activator.class.getName());
 
     public void start(BundleContext context) {
-        System.out.println("Starting the bundle By Gkr");
+        String logStr = "Starting the bundle By Gkr Test 1 " + LocalDateTime.now();
+        System.out.println(logStr);
+        LOGGER.info(logStr);
+
     }
 
     public void stop(BundleContext context) {
